@@ -1,2 +1,1 @@
-# myFirstGithubProject
-this is my first project  using github 
+website for a College
