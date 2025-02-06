@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المعرض - كلية العلوم والتكنولوجيا</title>
+    <style>
+        /* تنسيقات عامة */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            line-height: 1.6;
+        }
+    
+        header {
+            background: #216703;
+            color: white;
+            text-align: center;
+            padding: 15px 10px;
+        }
+    
+        header img {
+            width: 90px;
+            margin-bottom: 10px;
+        }
+    
+        header h1 {
+            margin: 5px 0 0 0;
+            font-size: 2.2rem;
+        }
+    
+        nav {
+            background-color: #d96f06;
+            display: flex;
+            justify-content: center;
+            padding: 10px 5px;
+        }
+    
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.1rem;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+    
+        nav a:hover {
+            background-color: #ffcc00;
+            transform: scale(1.1);
+        }
+    
+        main {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            margin: 20px auto;
+            max-width: 1000px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(220, 16, 16, 0.15);
+            text-align: center;
+        }
+    
+        main h2 {
+            color: #216703;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+    
+        /* الشبكة الخاصة بالصور */
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* صورتان في كل صف */
+        gap: 15px; /* المسافة بين الصور */
+        padding: 10px; /* مسافة حول المعرض */
+    }
+
+    .gallery .gallery-item {
+        text-align: center; /* جعل النص في المنتصف */
+        overflow: hidden;
+        background-color: rgba(220, 154, 12, 0.7); /* خلفية شفافة */
+        border-radius: 10px; /* زوايا مستديرة */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* ظل خفيف */
+        padding: 10px; /* مسافة داخلية */
+    }
+
+    /* الصور */
+    .gallery .gallery-item img {
+        width: 100%; /* عرض الصورة بالكامل */
+        height: 250px; /* ارتفاع الصورة ثابت */
+        object-fit: cover; /* ضبط حجم الصورة لتناسب الإطار */
+        border-radius: 10px; /* زوايا مستديرة */
+        transition: transform 0.3s, box-shadow 0.3s; /* تأثير الحركة */
+    }
+
+    .gallery .gallery-item img:hover {
+        transform: scale(1.1); /* تكبير الصورة عند التمرير */
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* إضافة ظل عند التمرير */
+    }
+
+    /* النص أسفل الصور */
+    
+    .gallery .image-title {
+        color: #e43b11; /* لون النص */
+        font-size: 1rem; /* حجم النص */
+        font-weight: bold; /* جعل النص عريض */
+        margin-top: 10px; /* مسافة بين النص والصورة */
+    }
+
+    /* تأثير عند التمرير على النص */
+    .gallery .image-title:hover {
+        color: #ffffff; /* تغيير اللون عند التمرير */
+        text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.7); /* تأثير ظل */
+    }
+    
+        footer {
+            background: #216703;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        }
+               footer a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+
+    </style>
+    
+    
+
+</head>
+<body>
+    <header>
+        <img src="photoes/-college-logo.png" alt="شعار الكلية">
+        <h1>المعرض - كلية العلوم والتكنولوجيا</h1>
+    </header>
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="academics.html">الأقسام</a>
+        <a href="course.html">الكورسات</a>
+        <a href="admission.html">التسجيل</a>
+        <a href="gallery.html">المعرض</a>
+        <a href="about.html">حول الكلية</a>
+    </nav>
+    <main>
+        <h2>صور الكلية</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="photoes/الى عاصمتنا سلام العاشقين.jpg" alt="صورة 1">
+                <p>صورة 1</p>
+            </div>
+            <div class="gallery-item">
+                <img src="photoes/-5917866391996843534_121.jpg" alt="صورة 2">
+                <p>صورة 2</p>
+            </div>
+            <div class="gallery-item">
+                <img src="photoes/-5917866391996843533_121.jpg" alt="صورة 3">
+                <p>صورة 3</p>
+            </div>
+            <div class="gallery-item">
+                <img src="photoes/الكليه الجامعية للعلوم والتكنولوجيا .png" alt="صورة 4">
+                <p>صورة 4</p>
+            </div>
+            <div class="gallery-item">
+                <img src="photoes/-5917866391996843528_109.jpg" alt="صورة 5">
+                <p>صورة 5</p>
+            </div>
+            <div class="gallery-item">
+                <img src="photoes/-5917866391996843531_121.jpg" alt="صورة 6">
+                <p>صورة 6</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy; 2024 جميع الحقوق محفوظة | <a href="https://www.cst.ps">كلية العلوم والتكنولوجيا</a>
+    </footer>
+</body>
+</html>

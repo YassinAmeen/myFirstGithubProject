@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الرئيسية - كلية العلوم والتكنولوجيا</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #f6f6f6;
+        }
+        header {
+            background: #216703;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        header img {
+            width: 100px;
+            margin-bottom: 10px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        nav {
+            background-color: #d96f06;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.1rem;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #ffcc00;
+        }
+        main {
+            position: relative;
+            padding: 40px; /* زيادة التباعد الداخلي */
+            text-align: center;
+            background: rgba(255, 255, 255, 0.9);
+            margin: 20px auto;
+            width: 95%; /* التحكم في العرض */
+            height: 80vh; /* التحكم في الارتفاع بالنسبة لارتفاع الشاشة */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden; /* للتأكد من احتواء المحتوى */
+        }
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%; /* لجعل الصورة تأخذ كامل العرض */
+            height: 100%; /* لجعل الصورة تأخذ كامل الارتفاع */
+            background: url('photoes/Screenshot_Facebook.jpg') no-repeat center center;
+            background-size: cover; /* لتغطية كامل العنصر */
+            opacity: 1; /* شفافية الصورة */
+            z-index: 0;
+        }
+         main h2 {
+            font-size: 2.5rem; /* تكبير النص */
+            font-weight: bold; /* زيادة سماكة النص */
+            color: #fff; /* لون النص */
+            background: rgba(0, 0, 0, 0.6); /* خلفية شفافة للنص */
+            padding: 10px;
+            border-radius: 5px; /* تنعيم الحواف */
+            display: inline-block; /* جعل الخلفية تناسب النص */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* إضافة ظل للنص */
+            position: relative;
+            z-index: 1; /* لضمان ظهور النص فوق الصورة */
+        }
+        main p {
+            font-size: 1.2rem; /* تكبير النص */
+            line-height: 1.8; /* زيادة التباعد بين الأسطر */
+            color: #fff; /* لون النص */
+            background: rgba(0, 0, 0, 0.6); /* خلفية شفافة */
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* ظل النص */
+            position: relative;
+            z-index: 1; /* لضمان ظهور النص فوق الصورة */
+        }
+        footer {
+            background: #216703;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="photoes/-college-logo.png" alt="شعار الكلية">
+        <h1>كلية العلوم والتكنولوجيا - خانيونس</h1>
+    </header>
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="academics.html">الأقسام </a>
+        <a href="course.html">الكورسات</a>
+        <a href="admission.html">التسجيل</a>
+        <a href="gallery.html">المعرض</a>
+        <a href="about.html">حول الكلية</a>
+        <a href="contact.html">تواصل معنا</a>
+    </nav>
+    <main>
+        <div class="background-image"></div>
+        <h2>مرحبًا بكم في كلية العلوم والتكنولوجيا</h2>
+        <p>
+            تأسست الكلية لتكون صرحًا تعليميًا متميزًا في المجالات العلمية والتقنية. 
+            نسعى لتقديم تعليم عالي الجودة يواكب التطورات الحديثة ويؤهل الطلاب لدخول سوق العمل بمهارات عالية.
+        </p>
+    </main>
+    <footer>
+        &copy; جميع الحقوق محفوظة 2024 | <a href="https://www.cst.ps">كلية العلوم والتكنولوجيا</a>
+    </footer>
+</body>
+</html>
